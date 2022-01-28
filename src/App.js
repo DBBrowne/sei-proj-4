@@ -1,13 +1,11 @@
 import React from 'react'
-import axios from 'axios'
+import eventsApi from './lib/api/api.js'
 
 function App() {
   React.useEffect(() => {
-    const getData = async () => {
-      const res = await axios.get('/api/!!!!!endpointhere!!!!!')
-      console.log(res)
-    }
-    getData()
+    eventsApi.get().then(res=>{
+      console.log(res.data)
+    })
   })
 
   return <h1>Hello World</h1>
