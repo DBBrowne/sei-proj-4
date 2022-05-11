@@ -8,5 +8,5 @@ function eventsGetList(){
 }
 
 export default {
-  get: eventsGetList,
+  getAll: eventsGetList,
 }
