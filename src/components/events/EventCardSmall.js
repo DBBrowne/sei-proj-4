@@ -21,9 +21,9 @@ const dateOptions = {
 export function toDateTime(date, includeDate = true) {
   let out = ''
   if (includeDate){
-    out += `${date.toLocaleDateString([], dateOptions)}, `
+    out += `${date.toLocaleDateString('en-GB', dateOptions)}, `
   }
-  out += date.toLocaleTimeString([], timeOptions)
+  out += date.toLocaleTimeString('en-GB', timeOptions)
   return out
 }
 
