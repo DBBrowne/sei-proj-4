@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.event-card-small {
+  --edge-margin: 8px;
+
+  display: flex;
+  border: 2px lightgray solid;
+
+  figure{
+    display: flex;
+    align-items: center;
+    margin: var(--edge-margin);
+    
+    img{
+      object-fit: contain;
+      height: 15wv;
+      width: 20vw;
+      min-height: 100px;
+      min-width: 130px;
+    }
+  }
+
+  .event-card-small_info{
+    
+    h3 {
+      margin-top: var(--edge-margin);
+    }
+    .event-times{
+        width: fit-content;
+        display: block;
+        margin-right: var(--edge-margin);
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  section {
+    width: 80%;
+    max-width: 1000px;
+  }
+}

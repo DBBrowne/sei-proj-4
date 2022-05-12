@@ -20,13 +20,14 @@ export default function Home (){
     }
     initEventData()
   }, [])
+
   return (
-    <>
+    <section>
       {isError && <Error />}
       {!eventsData.length ? 
         <Loading /> :
         <EventList events={eventsData}/>
       }
-    </>
+    </section>
   )
 }
