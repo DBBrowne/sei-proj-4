@@ -1,24 +1,115 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+# Heard
+Find live music near you!
 
-## Update the Proxy Server
+[![Prod](https://github.com/DBBrowne/sei-project-four-frontend/actions/workflows/test-main.yml/badge.svg)](https://github.com/DBBrowne/sei-project-four-frontend/actions/workflows/test-main.yml) [![Dev](https://github.com/DBBrowne/sei-project-four-frontend/actions/workflows/test-dev.yml/badge.svg)](https://github.com/DBBrowne/sei-project-four-frontend/actions/workflows/test-dev.yml)
+## Contents
+- [Title](#title)
+- [Demos](#demos)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+    - [Running Tests](#running-tests)
+- [Links](#links)
+- [Overview](#overview)
+    - [System Design](#system-design)
+    - [Core Behaviour](#core-behaviour)
+    - [Project History](#project-history)
+        - [Brief](#brief)
+        - [Planning](#planning)
+        - [Wireframes](#wireframes)
+        - [Project Plan](#project-plan)
+        - [Build Execution](#build-execution)
+    - [Known Bugs](#known-bugs)
+    - [Challenges](#challenges)
+    - [Wins](#wins)
+    - [Future Features](#future-features)
+    - [Key Lessons](#key-lessons)
+- [Team Members](#team-members)
 
-By default, the proxy server is set up to point at port 8000, if you need to do so update in `setupProxy.js` where commented.
+## Demos
 
-## Using NPM
+## Usage
 
-`npm run start` or `npm run dev`  to run the development server
+### Heard
+Overview usage
 
-`npm run build` to create a build directory
+## Technologies
+|React<br>JavaScript|Django<br>Python<br>postgreSQL|
+|---|---|
 
-## Using Yarn
+- [ReactJS Frontend](https://github.com/DBBrowne/sei-project-four-frontend)
+- [Python/Django Backend](https://github.com/DBBrowne/sei-project-four-backend)
 
-`yarn start` or `yarn dev`  to run the development server
+## Getting Started
+These instructions will run a copy of the project on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-`yarn build` to create a build directory
+#### Running Locally
+Set env variables:
+Duplicate env.example and env.private.example:
+```console
+:<repo-root>$ cp env.example env && cp env.private.example env.private
+```
+Set any blank variables.
 
-### ⚠️
 
-To prevent the `failed-to-compile` issue for linter errors like `no-unsed-vars`, rename the `.env.example` to `.env` and restart your development server. Note this will only change the behaviour of certain linter errors to now be warnings, and is added just to allow your code to compile in development. These errors should still be fixed and other errors will still result in the code being unable to compile
+No environment variables are necessary.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Install dependencies with npm:
+```console
+:<repo-root>$ npm i
+```
+Run with:
+```console
+:<repo-root>$ npm run dev
+```
 
+#### Deployment
+build to `/build/` :
+```console
+:<repo-root>$ npm run build
+```
+To deploy with netlify:
+```console
+:<repo-root>$ netlify deploy --dir=build
+```
+Set ENV vars.
+
+### Running Tests
+
+## Links
+
+****
+
+## Overview
+
+## System Design
+
+## Core Behaviour
+
+## Project History
+
+### Brief
+
+### Planning
+
+### Wireframes
+|![Desktop](https://user-images.githubusercontent.com/72463218/168068627-1d7d8ac0-adbd-46ba-8c50-e9ac3e6c5a59.png)|![Mobile](https://user-images.githubusercontent.com/72463218/168068692-b0bf9632-426e-47e7-947e-72f9f0a8b7c3.png)|
+|---|---|
+### Implementation Notes
+
+### Project Plan
+
+### build-execution
+
+## Known Bugs
+ - date locale locked to en-GB to simply testing.  Restructure to permit local dates.
+## Challenges
+
+## Wins
+
+## Future Features
+
+## Key Lessons
+
+## Team Members
+- [Duncan Browne](https://github.com/DBBrowne)
