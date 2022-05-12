@@ -42,7 +42,7 @@ export default function Home (){
   return (
     <section>
       {isError && <Error />}
-      {!eventsData.length ? 
+      {!isError && !eventsData.length ? 
         <Loading /> :
         <EventList events={eventsData}/>
       }
